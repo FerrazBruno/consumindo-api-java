@@ -10,7 +10,7 @@ public class MainBooks {
         Scanner leitura = new Scanner(System.in);
         System.out.println("Digite o titulo do livro para busca:");
         var tituloLivro = leitura.next();
-        String apiKey = "AIzaSyASVK6BhChMu9pLdK8ZYNaKKosbWWI3_eU";
+        String apiKey = "API_KEY";
         String endereco = "https://www.googleapis.com/books/v1/volumes?q=" + tituloLivro + "&key=" + apiKey;
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create(endereco)).build();
